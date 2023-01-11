@@ -33,9 +33,14 @@
   margin-right: 5px;
 }
 
+.block_left a :hover{
+  transform: scale(1.2);
+}
+
 .block_left a {
   text-decoration: none;
   color: white;
+  text-shadow: 1px 1px 17px white, 0 0 1em white;
 }
 
 .block_left ul li :hover {
@@ -85,6 +90,9 @@
   text-decoration: none;
   color: white;
 }
+
+.block-right :hover{
+  text-shadow: 1px 1px 17px white, 0 0 1em white;}
 
 .slider {
   margin: 0 auto;
@@ -184,4 +192,56 @@
     position: absolute;
     bottom: 10px;
     left: 45%;
+}
+
+@media all and (max-width:1024px){
+  .slider{
+    top: 541px;
+    left: 9px;
+  }
+  .container{
+    width: 380px;
+    position: relative;
+  }
+  .block_left{
+    width: 380px;
+  }
+  .block_left ul{
+    text-align: center;
+  }
+  .block-right :nth-child(2){
+    position: absolute;
+    left: 98px;
+    top: 296px;
+    border-bottom: 1px solid #000000;
+  }
+  .block-right h1{
+    position: absolute;
+    left: 56px;
+    top: 195px;
+    color: white;
+    text-align: center;
+  }
+  .block-right :nth-child(3){
+    display: none;
+  }
+  .block-right :nth-child(4){
+    position: absolute;
+    border: solid black;
+    left: 94px;
+    top: 336px;
+  }
+  .block-right :nth-child(5){
+    border: solid black;
+    position: absolute;
+    left: 77px;
+    top: 419px;
+  }
+  .footer {
+    position: absolute;
+    left: 80px;
+  }
+  .block-right {
+    display: contents;
+  }
 }
